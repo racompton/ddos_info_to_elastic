@@ -4,7 +4,7 @@ To set up ELK quickly, install docker (`apt install docker.io`) and then get the
 
 Then `cd docker-elk` and then do `docker-compose up -d`
 
-Please not that ELK is set up to listen on all interfaces so you will need a firewall to protect the host!
+Please note that ELK is set up to listen on all interfaces so you will need a firewall to protect the host!
 
 Then install this script and have it run every 5 mins:
 
