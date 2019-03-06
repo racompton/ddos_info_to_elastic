@@ -107,6 +107,8 @@ if debug:
 for IPaddress in data.get('outputData'):
     serialized_IPaddress = copy.deepcopy(IPaddress)
     del serialized_IPaddress['events']
+# Combine the Longitude and Latitude so that Kibana will do map visualizations on the location field    
+    serialized_IPaddress['location'] = "{},{}".format(serialized_IPaddress['Latitude'],serialized_IPaddress['Longitude'])
     for event in IPaddress.get('events'):
         serialized_IPaddress['event'] = event
         elk_write(es, serialized_IPaddress)
