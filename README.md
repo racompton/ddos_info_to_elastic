@@ -23,4 +23,4 @@ If you want to do map visualizations in Kibana, then under Kibana's Dev Tools co
             }
         }
     }
-}
+}`
