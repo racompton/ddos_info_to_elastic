@@ -12,15 +12,15 @@ Then install this script and have it run every 5 mins:
 
 If you want to do map visualizations in Kibana, then under Kibana's Dev Tools console paste in this to make the 'location' field a geo_point:
 
-`PUT /dis_info`
-`{`
-`    "mappings": {`
-`        "json": {`
-`            "properties": {`
-`                "location": {`
-`                    "type": "geo_point"`
-`                }`
-`            }`
-`        }`
-`    }`
-`}`
+`PUT /dis_info
+{
+    "mappings": {
+        "json": {
+            "properties": {
+                "location": {
+                    "type": "geo_point"
+                }
+            }
+        }
+    }
+}
