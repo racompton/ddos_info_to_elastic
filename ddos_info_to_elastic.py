@@ -52,7 +52,7 @@ if debug:
     print("The timestamp variable is set to: "+timestamp)
 
 # Disable the SSL Cert warnings on a self signed cert (Not recommended!)
-urllib3.disable_warnings()
+#urllib3.disable_warnings()
 
 # Set up the payload
 payload = {'username': username, 'api_key': api_key, 'modifiedSince': timestamp, 'limit': limit, 'sortBy':'numberOfTimesSeen'}
