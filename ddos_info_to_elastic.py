@@ -97,8 +97,6 @@ es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 def elk_write(es, incident):
     #insert
     es.index(index="dis_info", doc_type="json", body=incident)
-    #search
-    #es.search(index="dis_info", doc_type="json", body={"query": {"match": {"description": "abc"}}})
 
 # Is the don't delete arg set?
 if debug:
